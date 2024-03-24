@@ -15,7 +15,7 @@ function NavBar() {
             }}>
                 <span></span>
                 <span></span>
-                <span></span>
+    git            <span></span>
             </div>
             <ul className={menuOpen ? "open" : ""}>
                 <li>
