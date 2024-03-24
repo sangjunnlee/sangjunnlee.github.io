@@ -15,14 +15,17 @@ function NavBar() {
             }}>
                 <span></span>
                 <span></span>
-    git            <span></span>
+                <span></span>
             </div>
             <ul className={menuOpen ? "open" : ""}>
                 <li>
                     <NavLink to="/about"><IoMdPerson className="icon"/> About Me</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/todo">Todo</NavLink>
+                    <NavLink to="/work">Work</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/experience">Experience</NavLink>
                 </li>
             </ul>
         </nav>
