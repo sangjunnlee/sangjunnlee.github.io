@@ -12,6 +12,7 @@ function Todo () {
     }
 
     function handleTask(event) {
+        setInput("");
         setTaskList([...taskList, input]);
         event.preventDefault();
     }
@@ -21,8 +22,6 @@ function Todo () {
             <li>{task}</li>
         )
     }
-
-
 
     return (
         <div>

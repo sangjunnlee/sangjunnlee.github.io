@@ -1,13 +1,25 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-import Header from './Header';
+import About from './About';
 import Todo from './Todo';
+import NavBar from './NavBar';
+import NotFound from './NotFound';
+import '../style/website.css'
 
 function App() {
-    return <div>
-        <Header />
-        <Home />
-        <Todo />
-    </div>
+    return (
+        <div className='website'>
+            <BrowserRouter>
+                <NavBar />
+                <Routes>
+                    <Route path="/" element={<Home />}></Route>
+                    <Route path="/about" element={<About />}></Route>
+                    <Route path="/todo" element={<Todo />}></Route>
+                    <Route path="*" element={<NotFound />}></Route>
+                </Routes>
+            </BrowserRouter>
+        </div>
+    )
 }
 export default App;
