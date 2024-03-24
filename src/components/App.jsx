@@ -5,11 +5,11 @@ import About from './About';
 import Todo from './Todo';
 import NavBar from './NavBar';
 import NotFound from './NotFound';
-import '../style/website.css'
+import '../style/App.css'
 
 function App() {
     return (
-        <div className='website'>
+        <div className='App'>
             <BrowserRouter>
                 <NavBar />
                 <Routes>

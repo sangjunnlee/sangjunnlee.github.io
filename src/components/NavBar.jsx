@@ -1,17 +1,32 @@
 import React, {useState} from "react";
-import {Link, Outlet} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import '../style/navbar.css'
+import { IoMdHome, IoMdPerson } from "react-icons/io";
 
 function NavBar() {
+    const [menuOpen, setMenuOpen] = useState(false)
     return (
         <nav>
-            <div className="navbar">
-                <Link className="navbarMenu" to="/">Home</Link>
-                <Link className="navbarMenu" to="/about">About Me</Link>
-                <Link className="navbarMenu" to="/todo">Todo</Link>
+            <Link className="title" to="/">
+                <IoMdHome className="icon"/> Home 
+            </Link>
+            <div className="menu" onClick={() => {
+                setMenuOpen(!menuOpen);
+            }}>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <ul className={menuOpen ? "open" : ""}>
+                <li>
+                    <NavLink to="/about"><IoMdPerson className="icon"/> About Me</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/todo">Todo</NavLink>
+                </li>
+            </ul>
         </nav>
     )
-}
+} 
 
 export default NavBar
