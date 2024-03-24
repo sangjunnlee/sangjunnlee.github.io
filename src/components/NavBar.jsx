@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Link, NavLink} from "react-router-dom";
 import '../style/navbar.css'
-import { IoMdHome, IoMdPerson } from "react-icons/io";
+import { IoMdPerson } from "react-icons/io";
 import { IoCodeSlashOutline } from "react-icons/io5";
 import { MdComputer } from "react-icons/md";
 
@@ -10,9 +10,7 @@ function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false)
     return (
         <nav>
-            <Link className="title" to="/">
-                <IoMdHome className="icon"/> Home 
-            </Link>
+            <Link className="title" to="/"> sangjunlee</Link>
             <div className="menu" onClick={() => {
                 setMenuOpen(!menuOpen);
             }}>
