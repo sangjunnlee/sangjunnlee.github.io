@@ -3,13 +3,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: blue;
 }
 
-.content {
+.home-content {
     display: flex;
     align-items: center;  
+    height: 100vh;
     margin-right: 10em;
     background-color: red;
 }
@@ -34,4 +34,12 @@
     height: 80px;
     background-color: brown;
     margin: 10px auto;
+}
+
+.extra-content {
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

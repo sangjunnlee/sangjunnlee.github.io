@@ -11,7 +11,7 @@ function Home() {
     }, [])
     return (
         <div className="home-container">
-            <div className="content">
+            <div className="home-content">
                 <img src={profileImage} alt="SangJun's portrait" className="profile-image" data-aos='fade-up'/>
                 <div className="text-container">
                     <h1 className="title" data-aos='fade-down'>sangjunlee</h1> 
@@ -29,17 +29,8 @@ function Home() {
                     </h3>
                 </div>
             </div>
-            <div className="top">
-                <h1>Welcome</h1> <br /> <br /> <br /> 
-                <h1>Fade</h1>
-                <div className='animation' data-aos='fade-up'></div>
-                <div className='animation' data-aos='fade-down'></div>
-                <div className='animation' data-aos='fade-right'></div>
-                <h1>Flip</h1>
-                <div className='animation' data-aos='flip-up'></div>
-                <div className='animation'></div>
-                <h1>Zoom</h1>
-                <div className='animation' data-aos='zoom-in'></div>
+            <div className="extra-content" data-aos='zoom-in'>
+                <h1>extra</h1>
             </div>
         </div>
     )
