@@ -50,27 +50,27 @@ function About() {
                     <div class="timeline-container left-container">
                         <img src="/images/highschool-grad.jpg" alt="temp" />
                         <div class="text-box">
-                            <h2 style={{color: "black"}}>Guatemala</h2>
-                            <small style={{color: "black"}}>2021-2022</small>
-                            <p style={{color: "black"}}>saklfjdlkafajksfjadskfsdfjaskldkj</p>
+                            <h2>Guatemala</h2>
+                            <small>2021-2022</small>
+                            <p>saklfjdlkafajksfjadskfsdfjaskldkj</p>
                             <span class="left-container-arrow"></span>
                         </div>
                     </div>
                     <div class="timeline-container right-container">
                         <img src="/images/highschool-grad.jpg" alt="temp" />
                         <div class="text-box">
-                            <h2 style={{color: "black"}}>USA</h2>
-                            <small style={{color: "black"}}>2021-2022</small>
-                            <p style={{color: "black"}}>saklfjdlkafajksfjadskfsdfjaskldkj</p>
+                            <h2 >USA</h2>
+                            <small>2021-2022</small>
+                            <p >saklfjdlkafajksfjadskfsdfjaskldkj</p>
                             <span class="right-container-arrow"></span>
                         </div>
                     </div>
                     <div class="timeline-container left-container">
                         <img src="/images/highschool-grad.jpg" alt="temp" />
                         <div class="text-box">
-                            <h2 style={{color: "black"}}>Korea</h2>
-                            <small style={{color: "black"}}>2021-2022</small>
-                            <p style={{color: "black"}}>saklfjdlkafajksfjadskfsdfjaskldkj</p>
+                            <h2 >Korea</h2>
+                            <small>2021-2022</small>
+                            <p>saklfjdlkafajksfjadskfsdfjaskldkj</p>
                             <span class="left-container-arrow"></span>
                         </div>
                     </div>

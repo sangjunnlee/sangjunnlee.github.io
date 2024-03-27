@@ -35,7 +35,7 @@
     position: relative;
     max-width: 1200px;
     width: 100%;
-    margin: 100px auto;
+    margin: 25px auto 50px auto;
 }
 
 .timeline-container {
@@ -100,7 +100,7 @@
     top: 0;
     left: 50%;
     margin-left: -3px;
-    z-index: -0.5;
+    z-index: -1;
     animation: moveline 3s linear forwards;
 }
 @keyframes moveline {
@@ -111,7 +111,9 @@
         height: 100%;
     }
 }
-
+.text-box h2, .text-box small, .text-box p, .text-box span {
+    color: black;
+}
 .text-box h2 {
     font-weight: 600;
 }
