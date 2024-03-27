@@ -17,6 +17,20 @@ function About() {
         AOS.init({duration:2000})
     }, [])
 
+    const items = [{
+        title: "May 1940",
+        cardTitle: "Dunkirk",
+        url: "http://www.history.com",
+        cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
+        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+        media: {
+          type: "IMAGE",
+          source: {
+            url: "http://someurl/image.jpg"
+          }
+        }
+      }];
+
     return (
         <div className="about-container">
             <div className="about-content">
@@ -30,10 +44,37 @@ function About() {
                     <p>
                     I’m Kelly Hu (hoo, like an owl 🦉), a junior at UC Berkeley studying Electrical Engineering & Computer Science (EECS) with a certification in Design Innovation. As a proud Canadian (I'm from Toronto!), ex-bioengineering major, and occasional video-maker, I try to be intentional about exploring a hodgepodge of disciplines that help inform my passion for design.
                     Always growing and reflecting, I'm currently really interested in designing for human connection and social impact. Creating delightful yet intuitive and highly polished interfaces that are purposeful and well-intentioned is what excites me!
-
                     </p>
                 </div>
-                
+                <div className="timeline">
+                    <div class="timeline-container left-container">
+                        <img src="/images/highschool-grad.jpg" alt="temp" />
+                        <div class="text-box">
+                            <h2 style={{color: "black"}}>Guatemala</h2>
+                            <small style={{color: "black"}}>2021-2022</small>
+                            <p style={{color: "black"}}>saklfjdlkafajksfjadskfsdfjaskldkj</p>
+                            <span class="left-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="timeline-container right-container">
+                        <img src="/images/highschool-grad.jpg" alt="temp" />
+                        <div class="text-box">
+                            <h2 style={{color: "black"}}>USA</h2>
+                            <small style={{color: "black"}}>2021-2022</small>
+                            <p style={{color: "black"}}>saklfjdlkafajksfjadskfsdfjaskldkj</p>
+                            <span class="right-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="timeline-container left-container">
+                        <img src="/images/highschool-grad.jpg" alt="temp" />
+                        <div class="text-box">
+                            <h2 style={{color: "black"}}>Korea</h2>
+                            <small style={{color: "black"}}>2021-2022</small>
+                            <p style={{color: "black"}}>saklfjdlkafajksfjadskfsdfjaskldkj</p>
+                            <span class="left-container-arrow"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
