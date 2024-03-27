@@ -3,7 +3,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    height: 100vh;
+    background-color: black;
+}
+
+.about-content {
+    background-color: black;
+}
+
+.img-text {
+    display: flex;
+    flex-direction: row;
 }
 
 .crsl {
