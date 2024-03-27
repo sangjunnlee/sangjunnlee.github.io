@@ -36,32 +36,32 @@ function About() {
             <div className="about-content">
                 <h1 className="title" data-aos='slide-right' style={{textAlign: 'center', marginBottom: '5%'}}>Who am I?</h1>
                 <div className="core">
-                <div className="timeline">
-                    <div class="timeline-container left-container">
-                        <img src="/images/highschool-grad.jpg" alt="temp" />
-                        <div class="text-box">
-                            <h2>Guatemala</h2>
-                            <small>2021-2022</small>
-                            <span class="left-container-arrow"></span>
+                    <div className="timeline">
+                        <div class="timeline-container left-container">
+                            <img src="/images/highschool-grad.jpg" alt="temp" />
+                            <div class="text-box">
+                                <h2>Guatemala</h2>
+                                <small>2021-2022</small>
+                                <span class="left-container-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="timeline-container right-container">
+                            <img src="/images/highschool-grad.jpg" alt="temp" />
+                            <div class="text-box">
+                                <h2 >USA</h2>
+                                <small>2021-2022</small>
+                                <span class="right-container-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="timeline-container left-container">
+                            <img src="/images/highschool-grad.jpg" alt="temp" />
+                            <div class="text-box">
+                                <h2 >Korea</h2>
+                                <small>2021-2022</small>
+                                <span class="left-container-arrow"></span>
+                            </div>
                         </div>
                     </div>
-                    <div class="timeline-container right-container">
-                        <img src="/images/highschool-grad.jpg" alt="temp" />
-                        <div class="text-box">
-                            <h2 >USA</h2>
-                            <small>2021-2022</small>
-                            <span class="right-container-arrow"></span>
-                        </div>
-                    </div>
-                    <div class="timeline-container left-container">
-                        <img src="/images/highschool-grad.jpg" alt="temp" />
-                        <div class="text-box">
-                            <h2 >Korea</h2>
-                            <small>2021-2022</small>
-                            <span class="left-container-arrow"></span>
-                        </div>
-                    </div>
-                </div>
                     <Carousel className="crsl" autoPlay infiniteLoop showIndicators={false} showArrows={false} showStatus={false} showThumbs={false}> 
                         {imagePaths.map((imagePath, index) => (
                             <img key={index} src={imagePath} alt={'Image ${index}'}/>
