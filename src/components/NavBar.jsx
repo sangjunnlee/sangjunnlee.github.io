@@ -13,10 +13,7 @@ function NavBar() {
             <Link className="title" to="/"> sangjunlee</Link>
             <div className="menu" onClick={() => {
                 setMenuOpen(!menuOpen);
-            }}>
-                <span></span>
-                <span></span>
-                <span></span>
+            }}>               
             </div>
             <ul className={menuOpen ? "open" : ""}>
                 <li>
