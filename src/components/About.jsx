@@ -11,25 +11,35 @@ const imagePaths = [
     '/images/rokaf.PNG'
 ]
 
+
+
 function About() {
 
     useEffect(() => {
         AOS.init({duration:2000})
     }, [])
 
-    const items = [{
-        title: "May 1940",
-        cardTitle: "Dunkirk",
-        url: "http://www.history.com",
-        cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
-        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-        media: {
-          type: "IMAGE",
-          source: {
-            url: "http://someurl/image.jpg"
-          }
-        }
-      }];
+    const timelineData = [
+        {
+            imgSrc: "/images/flag-guatemalan.jpeg",
+            imgAlt: "temp",
+            country: "Guatemala",
+            date: "2021-2022"
+        },
+        {
+            imgSrc: "/images/flag-usa.png",
+            imgAlt: "temp",
+            country: "USA",
+            date: "2021-2022"
+        },
+        {
+            imgSrc: "/images/flag-korean.jpeg",
+            imgAlt: "temp",
+            country: "Korea",
+            date: "2021-2022"
+        },
+        
+    ];
 
     return (
         <div className="about-container">
@@ -38,30 +48,19 @@ function About() {
                 <div className="core">
                     <div className="timeline">
                         <div className="line"></div>
-                        <div className="timeline-container left-container">
-                            <img src="/images/highschool-grad.jpg" alt="temp" />
-                            <div className="text-box">
-                                <h2>Guatemala</h2>
-                                <small>2021-2022</small>
-                                <span className="left-container-arrow"></span>
-                            </div>
-                        </div>
-                        <div class="timeline-container right-container">
-                            <img src="/images/highschool-grad.jpg" alt="temp" />
-                            <div className="text-box">
-                                <h2 >USA</h2>
-                                <small>2021-2022</small>
-                                <span className="right-container-arrow"></span>
-                            </div>
-                        </div>
-                        <div className="timeline-container left-container">
-                            <img src="/images/highschool-grad.jpg" alt="temp" />
-                            <div className="text-box">
-                                <h2 >Korea</h2>
-                                <small>2021-2022</small>
-                                <span className="left-container-arrow"></span>
-                            </div>
-                        </div>
+                        {timelineData.map((item, index) => {
+                            return (
+                                <div className={`timeline-container ${index % 2 === 0 ? 'left-container' : 'right-container'}`} key={index}>
+                                    <img src={item.imgSrc} alt={item.imgAlt} />
+                                    <div className="text-box">
+                                        <h2>{item.country}</h2>
+                                        <small>{item.date}</small>
+                                        <span className={`${index % 2 === 0 ? 'left-container-arrow' : 'right-container-arrow'}`}></span>
+                                    </div>
+                                </div>
+                            );
+                            
+                        })} 
                     </div>
                     <Carousel className="crsl" autoPlay infiniteLoop showIndicators={false} showArrows={false} showStatus={false} showThumbs={false}> 
                         {imagePaths.map((imagePath, index) => (
