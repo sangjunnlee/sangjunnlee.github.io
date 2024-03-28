@@ -24,7 +24,7 @@ function Home() {
     return (
         <div className="home-container">
             <div className="home-content">
-                <img src='/images/portrait.jpeg' alt="SangJun's portrait" className="profile-image" data-aos='fade-up'/>
+                <img src='/assets/about/portrait.jpeg' alt="SangJun's portrait" className="profile-image" data-aos='fade-up'/>
                 <div className="text-container">
                     <h1 className="title" data-aos='fade-down'>sangjunlee</h1> 
                     <h3> I am a {" "}

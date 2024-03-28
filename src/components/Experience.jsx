@@ -8,7 +8,7 @@ function Experience() {
     const timelineData = [
         {
             date: "2023-present",
-            imgSrc: "/images/experience/rokaf.jpeg",
+            imgSrc: "/assets/experience/rokaf.jpeg",
             imgAlt: "rokaf-icon",
             company: "Republic of Korea Air Force",
             position: "Software Engineer",
@@ -17,7 +17,7 @@ function Experience() {
         },
         {
             date: "2023 June-August",
-            imgSrc: "/images/experience/cs61c.png",
+            imgSrc: "/assets/experience/cs61c.png",
             imgAlt: "cs61c-icon",
             company: "Great Ideas in Computer Architecture (Machine Structures)",
             position: "Teacher Assistant",
@@ -26,7 +26,7 @@ function Experience() {
         },
         {
             date: "2023 June-August",
-            imgSrc: "/images/experience/async-health.jpeg",
+            imgSrc: "/assets/experience/async-health.jpeg",
             imgAlt: "asynchealth-icon",
             company: "AsyncHealth:",
             position: "Software Engineer Intern",
@@ -35,7 +35,7 @@ function Experience() {
         },
         {
             date: "2023 June-August",
-            imgSrc: "/images/experience/alecto-ai.jpeg",
+            imgSrc: "/assets/experience/alecto-ai.jpeg",
             imgAlt: "alectoAI-icon",
             company: "Alecto AI",
             position: "Software Engineer Intern",
@@ -44,7 +44,7 @@ function Experience() {
         },
         {
             date: "2022 June-August",
-            imgSrc: "/images/experience/exoatlet.jpeg",
+            imgSrc: "/assets/experience/exoatlet.jpeg",
             imgAlt: "exoatlet-icon",
             company: "Exoatlet",
             position: "Software Engineer Intern",
@@ -53,7 +53,7 @@ function Experience() {
         },
         {
             date: "2022-2023",
-            imgSrc: "/images/experience/neighbor-ride.svg",
+            imgSrc: "/assets/experience/neighbor-ride.svg",
             imgAlt: "neighbor-ride-icon",
             company: "Neighbor Ride",
             position: "Backend Developer",
@@ -62,7 +62,7 @@ function Experience() {
         },
         {
             date: "2021-present",
-            imgSrc: "/images/experience/mdb.jpeg",
+            imgSrc: "/assets/experience/mdb.jpeg",
             imgAlt: "mdb-icon",
             company: "Mobile Developers at Berkeley",
             position: "Member",

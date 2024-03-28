@@ -20,7 +20,7 @@ function ProjectContainer({project}) {
             )}
             {project.sourceCode && (
                 <a href={project.sourceCode} aria-label='source code' className='link'>
-                    <img src="/images/github.webp" />
+                    <img src="/assets/projects/github.webp" />
                 </a>
             )}
         </div>
