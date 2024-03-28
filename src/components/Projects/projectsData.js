@@ -4,7 +4,7 @@ const projects = [
     {
       name: 'Gitlab',
       description:'Small version control system',
-      imgSrc: '/images/projects/git.jpeg',
+      imgSrc: '/assets/projects/git.jpeg',
       stack: ['Java'],
       sourceCode: 'https://github.com',
       livePreview: 'https://github.com',
@@ -12,7 +12,7 @@ const projects = [
     {
       name: 'Neighbor Ride',
       description: 'Small jlkfjslajf',
-      imgSrc: '/images/projects/git.jpeg',
+      imgSrc: '/assets/projects/git.jpeg',
       stack: ['SASS', 'TypeScript', 'React'],
       sourceCode: 'https://github.com',
       livePreview: 'https://github.com',
@@ -20,7 +20,7 @@ const projects = [
     {
       name: 'Project 3',
       description: 'Small jlkfjslajf',
-      imgSrc: '/images/projects/git.jpeg',
+      imgSrc: '/assets/projects/git.jpeg',
       stack: ['SASS', 'TypeScript', 'React'],
       sourceCode: 'https://github.com',
       livePreview: 'https://github.com',
@@ -28,7 +28,7 @@ const projects = [
     {
       name: 'Project 4',
       description: 'Small jlkfjslajf',
-      imgSrc: '/images/projects/git.jpeg',
+      imgSrc: '/assets/projects/git.jpeg',
       stack: ['SASS', 'TypeScript', 'React'],
       sourceCode: 'https://github.com',
       livePreview: 'https://github.com',
@@ -36,7 +36,7 @@ const projects = [
     {
       name: 'Project 5',
       description: 'Small jlkfjslajf',
-      imgSrc: '/images/projects/git.jpeg',
+      imgSrc: '/assets/projects/git.jpeg',
       stack: ['SASS', 'TypeScript', 'React'],
       sourceCode: 'https://github.com',
       livePreview: 'https://github.com',
@@ -44,7 +44,7 @@ const projects = [
     {
       name: 'Project 6',
       description: 'Small jlkfjslajf',
-      imgSrc: '/images/projects/git.jpeg',
+      imgSrc: '/assets/projects/git.jpeg',
       stack: ['SASS', 'TypeScript', 'React'],
       sourceCode: 'https://github.com',
       livePreview: 'https://github.com',

@@ -1,24 +1,20 @@
 import React, {useEffect} from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Projects from './Projects';
-import Experience from './Experience';
-import NavBar from './NavBar';
-import NotFound from './NotFound';
-import '../style/App.css'
+import Home from '../Home/Home';
+import About from '../About/About';
+import Projects from '../Projects/Projects';
+import Experience from '../Experience/Experience';
+import NavBar from '../NavBar/NavBar';
+import NotFound from '../NotFound';
+import './App.css'
 
 function App() {
     useEffect(() => {
-        // Function to scroll to the top
         const scrollToTop = () => {
             window.scrollTo(0, 0);
         };
-
-        // Add event listener for page reload
         window.addEventListener('beforeunload', scrollToTop);
-
-        // Remove event listener when component unmounts
+        
         return () => {
             window.removeEventListener('beforeunload', scrollToTop);
         };

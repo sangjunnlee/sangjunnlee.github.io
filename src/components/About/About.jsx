@@ -1,17 +1,15 @@
 import React, {useEffect} from "react";
-import "../style/About.css";
+import "./About.css";
 import { Carousel } from "react-responsive-carousel";
 import AOS from "aos";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const imagePaths = [
-    '/images/highschool-grad.JPG',
-    '/images/korea-pic.jpg',
-    '/images/korea.jpg',
-    '/images/rokaf.PNG'
+    '/assets/about/highschool-grad.JPG',
+    '/assets/about/korea-pic.jpg',
+    '/assets/about/korea.jpg',
+    '/assets/about/rokaf.PNG'
 ]
-
-
 
 function About() {
 
@@ -21,19 +19,19 @@ function About() {
 
     const timelineData = [
         {
-            imgSrc: "/images/flag-guatemalan.jpeg",
+            imgSrc: "/assets/flags/guatemala.jpeg",
             imgAlt: "temp",
             country: "Guatemala",
             date: "2021-2022"
         },
         {
-            imgSrc: "/images/flag-usa.png",
+            imgSrc: "/assets/flags/usa.png",
             imgAlt: "temp",
             country: "USA",
             date: "2021-2022"
         },
         {
-            imgSrc: "/images/flag-korean.jpeg",
+            imgSrc: "/assets/flags/korea.jpeg",
             imgAlt: "temp",
             country: "Korea",
             date: "2021-2022"
