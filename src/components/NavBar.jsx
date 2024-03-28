@@ -20,11 +20,12 @@ function NavBar() {
                     <NavLink to="/about"><IoMdPerson className="icon"/> About Me</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/work"><IoCodeSlashOutline className="icon"/>Work</NavLink>
-                </li>
-                <li>
                     <NavLink to="/experience"><MdComputer className="icon"/>Experience</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/projects"><IoCodeSlashOutline className="icon"/>Projects</NavLink>
+                </li>
+                
             </ul>
         </nav>
     )

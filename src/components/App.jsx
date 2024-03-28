@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
-import Work from './Work';
+import Projects from './Projects';
 import Experience from './Experience';
 import NavBar from './NavBar';
 import NotFound from './NotFound';
@@ -31,8 +31,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/about" element={<About />}></Route>
-                    <Route path="/work" element={<Work />}></Route>
                     <Route path="/experience" element={<Experience />}></Route>
+                    <Route path="/projects" element={<Projects />}></Route>
                     <Route path="*" element={<NotFound />}></Route>
                 </Routes>
             </BrowserRouter>
