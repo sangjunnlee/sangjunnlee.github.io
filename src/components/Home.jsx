@@ -5,9 +5,22 @@ import AOS from "aos";
 import 'aos/dist/aos.css'
 
 function Home() {
+    const [scrollPosition, setScrollPosition] = useState(0);
+
     useEffect(() => {
         AOS.init({duration:2000})
-    }, [])
+
+        const handleScroll = () => {
+            setScrollPosition(window.pageYOffset);
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <div className="home-container">
             <div className="home-content">
@@ -27,6 +40,9 @@ function Home() {
                         </span>
                     </h3>
                 </div>
+            </div>
+            <div className="scroll-arrow" data-aos='slide-up' style={{ opacity: 1 - scrollPosition / 400 }}>
+                <i className="arrow down"></i>
             </div>
             <div className="extra-content" data-aos='zoom-in'>
                 <h1>extra</h1>
