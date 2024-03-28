@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
-import {projects} from '../projects.js';
+import {projects} from './projectsData.js';
 import ProjectContainer from "./ProjectContainer";
 import uniqid from 'uniqid'
 import AOS from "aos";
-import '../style/Projects.css'
+import './projects.css';
 
 function Projects() {
     useEffect(() => {

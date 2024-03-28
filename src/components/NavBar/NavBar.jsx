@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Link, NavLink} from "react-router-dom";
-import '../style/navbar.css'
+import './navbar.css'
 import { IoMdPerson } from "react-icons/io";
 import { IoCodeSlashOutline } from "react-icons/io5";
 import { MdComputer } from "react-icons/md";

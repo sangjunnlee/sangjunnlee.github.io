@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import AOS from "aos";
 import 'react-vertical-timeline-component/style.min.css';
-import "../style/Experience.css";
+import "./Experience.css";
 
 function Experience() {
     const timelineData = [

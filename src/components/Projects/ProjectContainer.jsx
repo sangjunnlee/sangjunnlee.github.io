@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import '../style/ProjectContainer.css'
+import './project-container.css'
 import uniqid from 'uniqid';
 
 function ProjectContainer({project}) {

@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import "../style/About.css";
+import "./About.css";
 import { Carousel } from "react-responsive-carousel";
 import AOS from "aos";
 import "react-responsive-carousel/lib/styles/carousel.min.css";

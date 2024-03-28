@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import "../style/Home.css";
+import "./Home.css";
 import Typewriter from "typewriter-effect";
 import AOS from "aos";
 import 'aos/dist/aos.css'
