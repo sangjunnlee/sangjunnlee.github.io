@@ -11,7 +11,7 @@ function Projects() {
     });
     return (
         <div className="projects-container">
-            <h1>My Projects</h1>
+            <h1 data-aos='slide-down'>My Projects</h1>
         <div className='grid-container' data-aos="zoom-in">
             {projects.map((project) => (
             <ProjectContainer key={uniqid()} project={project} />

@@ -10,7 +10,7 @@ function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false)
     return (
         <nav>
-            <Link className="title" to="/"> sangjunlee</Link>
+            <Link className="title" to="/"> SJL</Link>
             <div className="menu" onClick={() => {
                 setMenuOpen(!menuOpen);
             }}>               
