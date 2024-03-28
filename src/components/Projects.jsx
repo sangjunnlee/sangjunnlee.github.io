@@ -1,12 +1,20 @@
 import React, {useState} from "react";
+import {projects} from '../projects.js';
+import ProjectContainer from "./ProjectContainer";
+import uniqid from 'uniqid'
+import '../style/Projects.css'
 
-
-function Work() {
+function Projects() {
     return (
-        <div>
-            <h1>Work</h1>  
+        <div className="projects-container">
+            <h1>My Projects</h1>
+        <div className='grid-container'>
+            {projects.map((project) => (
+            <ProjectContainer key={uniqid()} project={project} />
+            ))}
+        </div>
         </div>
     )
 }
 
-export default Work;
+export default Projects;
