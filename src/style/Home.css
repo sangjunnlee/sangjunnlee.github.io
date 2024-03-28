@@ -10,7 +10,6 @@
     align-items: center;  
     height: 100vh;
     margin-right: 10em;
-    background-color: #000;
 }
 .profile-image {
     margin-right: 5em;
@@ -42,3 +41,21 @@
     justify-content: center;
     align-items: center;
 }
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 6px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
