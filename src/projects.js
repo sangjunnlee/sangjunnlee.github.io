@@ -2,25 +2,49 @@ const projects = [
     // projects can be added an removed
     // if there are no projects, Projects section won't show up
     {
-      name: 'Project 1',
-      description:
-        'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-      stack: ['SASS', 'TypeScript', 'React'],
+      name: 'Gitlab',
+      description:'Small version control system',
+      imgSrc: '/images/projects/git.jpeg',
+      stack: ['Java'],
       sourceCode: 'https://github.com',
       livePreview: 'https://github.com',
     },
     {
-      name: 'Project 2',
-      description:
-        'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      name: 'Neighbor Ride',
+      description: 'Small jlkfjslajf',
+      imgSrc: '/images/projects/git.jpeg',
       stack: ['SASS', 'TypeScript', 'React'],
       sourceCode: 'https://github.com',
       livePreview: 'https://github.com',
     },
     {
       name: 'Project 3',
-      description:
-        'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      description: 'Small jlkfjslajf',
+      imgSrc: '/images/projects/git.jpeg',
+      stack: ['SASS', 'TypeScript', 'React'],
+      sourceCode: 'https://github.com',
+      livePreview: 'https://github.com',
+    },
+    {
+      name: 'Project 4',
+      description: 'Small jlkfjslajf',
+      imgSrc: '/images/projects/git.jpeg',
+      stack: ['SASS', 'TypeScript', 'React'],
+      sourceCode: 'https://github.com',
+      livePreview: 'https://github.com',
+    },
+    {
+      name: 'Project 5',
+      description: 'Small jlkfjslajf',
+      imgSrc: '/images/projects/git.jpeg',
+      stack: ['SASS', 'TypeScript', 'React'],
+      sourceCode: 'https://github.com',
+      livePreview: 'https://github.com',
+    },
+    {
+      name: 'Project 6',
+      description: 'Small jlkfjslajf',
+      imgSrc: '/images/projects/git.jpeg',
       stack: ['SASS', 'TypeScript', 'React'],
       sourceCode: 'https://github.com',
       livePreview: 'https://github.com',

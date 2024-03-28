@@ -1,14 +1,18 @@
-import React, {useState} from "react";
+import React, {useEffect} from "react";
 import {projects} from '../projects.js';
 import ProjectContainer from "./ProjectContainer";
 import uniqid from 'uniqid'
+import AOS from "aos";
 import '../style/Projects.css'
 
 function Projects() {
+    useEffect(() => {
+        AOS.init({ duration:2000 })
+    });
     return (
         <div className="projects-container">
             <h1>My Projects</h1>
-        <div className='grid-container'>
+        <div className='grid-container' data-aos="zoom-in">
             {projects.map((project) => (
             <ProjectContainer key={uniqid()} project={project} />
             ))}

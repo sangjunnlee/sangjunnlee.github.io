@@ -6,33 +6,38 @@
     transition: transform 0.2s linear;
     background-color: #f3f3f3;
     color: black;
-  }
+}
   
-  .project:hover {
+.project:hover {
     transform: translateY(-7px);
-  }
-  
-  .project-description {
+}
+
+.project-description {
     margin-top: 1em;
-  }
-  
-  .project img {
+}
+
+.project img {
     max-width: 100%;
     height: auto; 
     display: block; 
     margin-top: 5%;
-  }
-  .project-stack {
+}
+.project-stack {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 1.2em 0;
-  }
-  
-  .project-stack-item {
+}
+
+.project-stack-item {
     margin: 1em;
     font-weight: 500;
     font-size: 0.8rem;
     color: var(--clr-fg-alt);
-  }
-  
+}
+ 
+.link img {
+    margin: 0 auto;
+    width: 15%;
+    height: auto;
+}

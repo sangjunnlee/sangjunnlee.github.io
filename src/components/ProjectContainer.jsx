@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React, {useEffect} from "react";
 import '../style/ProjectContainer.css'
-import uniqid from 'uniqid'
+import uniqid from 'uniqid';
 
 function ProjectContainer({project}) {
     return (
@@ -8,7 +8,7 @@ function ProjectContainer({project}) {
             <h3>{project.name}</h3>
 
             <p className='project-description'>{project.description}</p>
-            <img src="/images/flag-usa.png"/>
+            <img src={project.imgSrc}/>
             {project.stack && (
             <ul className='project-stack'>
                 {project.stack.map((item) => (
@@ -17,6 +17,11 @@ function ProjectContainer({project}) {
                 </li>
                 ))}
             </ul>
+            )}
+            {project.sourceCode && (
+                <a href={project.sourceCode} aria-label='source code' className='link'>
+                    <img src="/images/github.webp" />
+                </a>
             )}
         </div>
     )
