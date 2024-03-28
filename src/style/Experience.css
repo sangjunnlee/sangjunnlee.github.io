@@ -1,0 +1,20 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7% 5% 5% 7%;
+}
+.experience-container h1 {
+    margin-bottom: 3%;
+}
+.date-timeline {
+    color: white;
+}
+
+.icon-image {
+    width: 100%; /* Adjust the width to fit within the circular frame */
+    height: 100%; /* Adjust the height to fit within the circular frame */
+    border-radius: 50%; /* Ensure the image maintains a circular shape */
+    object-fit: cover; /* Ensure the image covers the circular frame without stretching */
+}
