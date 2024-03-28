@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import './project-container.css'
 import uniqid from 'uniqid';
 

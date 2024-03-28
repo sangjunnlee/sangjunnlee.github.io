@@ -1,14 +1,12 @@
-import React, {useEffect} from "react";
+import React from "react";
 import {projects} from './projectsData.js';
 import ProjectContainer from "./ProjectContainer";
 import uniqid from 'uniqid'
-import AOS from "aos";
+import useAOS from "../../hooks/useAOS.js";
 import './projects.css';
 
 function Projects() {
-    useEffect(() => {
-        AOS.init({ duration:2000 })
-    });
+    useAOS();
     return (
         <div className="projects-container">
             <h1 data-aos='slide-down'>My Projects</h1>
@@ -20,5 +18,4 @@ function Projects() {
         </div>
     )
 }
-
 export default Projects;

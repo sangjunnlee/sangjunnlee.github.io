@@ -1,44 +1,15 @@
-import React, {useEffect} from "react";
-import "./About.css";
+import React from "react";
+import useAOS from "../../hooks/useAOS";
 import { Carousel } from "react-responsive-carousel";
-import AOS from "aos";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-const imagePaths = [
-    '/assets/about/highschool-grad.JPG',
-    '/assets/about/korea-pic.jpg',
-    '/assets/about/korea.jpg',
-    '/assets/about/rokaf.PNG'
-]
+import {imagePaths} from './imagePath.js';
+import { timelineData } from "./timelineData.js";
+import "./About.css";
 
 function About() {
 
-    useEffect(() => {
-        AOS.init({duration:2000})
-    }, [])
-
-    const timelineData = [
-        {
-            imgSrc: "/assets/flags/guatemala.jpeg",
-            imgAlt: "temp",
-            country: "Guatemala",
-            date: "2021-2022"
-        },
-        {
-            imgSrc: "/assets/flags/usa.png",
-            imgAlt: "temp",
-            country: "USA",
-            date: "2021-2022"
-        },
-        {
-            imgSrc: "/assets/flags/korea.jpeg",
-            imgAlt: "temp",
-            country: "Korea",
-            date: "2021-2022"
-        },
-        
-    ];
-
+    useAOS();
+    
     return (
         <div className="about-container">
             <div className="about-content">

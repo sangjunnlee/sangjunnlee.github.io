@@ -1,15 +1,13 @@
 import React, {useEffect, useState} from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
-import AOS from "aos";
-import 'aos/dist/aos.css'
+import useAOS from "../../hooks/useAOS";
 
 function Home() {
     const [scrollPosition, setScrollPosition] = useState(0);
+    useAOS();
 
     useEffect(() => {
-        AOS.init({duration:2000})
-
         const handleScroll = () => {
             setScrollPosition(window.pageYOffset);
         };
