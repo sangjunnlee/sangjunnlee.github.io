@@ -36,9 +36,12 @@ function About() {
                             <img key={index} src={imagePath} alt={'Image ${index}'}/>
                         ))}
                     </Carousel>
-                    <p>
-                    I’m Kelly Hu (hoo, like an owl 🦉), a junior at UC Berkeley studying Electrical Engineering & Computer Science (EECS) with a certification in Design Innovation. As a proud Canadian (I'm from Toronto!), ex-bioengineering major, and occasional video-maker, I try to be intentional about exploring a hodgepodge of disciplines that help inform my passion for design.
-                    Always growing and reflecting, I'm currently really interested in designing for human connection and social impact. Creating delightful yet intuitive and highly polished interfaces that are purposeful and well-intentioned is what excites me!
+                    <p style={{fontSize: 'medium'}}>
+                        Hi! I'm SangJun Lee, currently a junior at UC Berkeley studying Electrical Engineering and Computer Science (EECS) 🚀🚀. <br /> <br />
+                        I have had the privilege of being able to call three different countries my home 🌏: Guatemala, Korea, and the United States. My diverse childhood has endowed me with a broad perspective and deeper appreciation of different cultures. <br /><br />
+                        Some of my hobbies include traveling, sports, and programming. I love exploring new places around the world. Furthermore, I enjoy playing sports as a way to relieve myself from studying and work. I'm especially in love with basketball 🏀 and football ⚽️. <br /><br />
+                        Professionally 💻, I specialize in backend development, but my journey in tech is not limited to one domain. I've also ventured in full stack development and the process of training and fine-tuning AI models. Embracing challenges and new opportunities to learn in this dynamic field is what drives my passion towards programming. I love working with new people and embracing new challenges. <br /><br />
+                        Feel free to contact me if you want to know more! 
                     </p>
                 </div>
             </div>
