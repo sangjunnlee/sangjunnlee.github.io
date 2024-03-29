@@ -17,13 +17,16 @@ function NavBar() {
             </div>
             <ul className={menuOpen ? "open" : ""}>
                 <li>
-                    <NavLink to="/about"><IoMdPerson className="icon"/> About Me</NavLink>
+                    <NavLink className='tab' to="/about">
+                        <IoMdPerson className="icon"/>
+                        About Me
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/experience"><MdComputer className="icon"/>Experience</NavLink>
+                    <NavLink to="/experience"><MdComputer className="icon"/> Experience</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/projects"><IoCodeSlashOutline className="icon"/>Projects</NavLink>
+                    <NavLink to="/projects"><IoCodeSlashOutline className="icon"/> Projects</NavLink>
                 </li>
                 <li>
                     <a href={resume} target="_blank" rel="noopener noreferrer"><IoDocumentOutline className="icon"/>Resume</a>

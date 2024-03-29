@@ -25,6 +25,7 @@ nav .title {
 
 nav ul {
     display: flex;
+    align-items: center;
 }
 
 nav ul li {
@@ -39,7 +40,6 @@ nav ul li a {
     margin: 0 0.5rem;
     border-radius: 0.5rem;
 }
-
 nav ul li a:not(.active):hover {
     background-color:#848487 ;
 }
@@ -95,8 +95,6 @@ nav .menu span {
 }
 
 .icon {
-    vertical-align: text-bottom;
-    margin-right: 5px;
-    margin-bottom: 1px;
+    margin-right: 8px;
+    vertical-align: -6px;
 }
-
