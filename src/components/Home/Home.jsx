@@ -2,6 +2,10 @@ import React, {useEffect, useState} from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
 import useAOS from "../../hooks/useAOS";
+import Contact from "../Contact/Contact";
+import { HiOutlineMail } from "react-icons/hi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 
 function Home() {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -37,13 +41,24 @@ function Home() {
                             />
                         </span>
                     </h3>
+                    <div className="icon-container">
+                        <a href="https://www.linkedin.com/in/sangjunnlee/">
+                            <FaLinkedin className="icon" color="white" />
+                        </a>
+                        <a href="https://github.com/sangjunnlee">
+                            <FaGithub className="icon" color="white"/>
+                        </a>
+                        <a href="mailto:sjlee9920@gmail.com">
+                            <HiOutlineMail className="icon" color="white"/>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="scroll-arrow" data-aos='slide-up' style={{ opacity: 1 - scrollPosition / 400 }}>
                 <i className="arrow down"></i>
             </div>
             <div className="extra-content" data-aos='zoom-in'>
-                <h1>extra</h1>
+                <Contact />
             </div>
         </div>
     )

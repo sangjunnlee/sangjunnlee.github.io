@@ -29,7 +29,6 @@
 
 .extra-content {
     height: 100vh;
-    background-color: pink;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,3 +51,15 @@
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
+.icon-container {
+    margin-top: 8px;
+}
+
+.icon-container a {
+    margin-right: 20px;
+}
+.icon {
+    width: 25px;
+    height: auto;
+}
+
