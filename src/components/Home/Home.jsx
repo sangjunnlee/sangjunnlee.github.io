@@ -54,12 +54,12 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="scroll-arrow" data-aos='slide-up' style={{ opacity: 1 - scrollPosition / 400 }}>
+            {/* <div className="scroll-arrow" data-aos='slide-up' style={{ opacity: 1 - scrollPosition / 400 }}>
                 <i className="arrow down"></i>
             </div>
             <div className="extra-content" data-aos='zoom-in'>
                 <Contact />
-            </div>
+            </div> */}
         </div>
     )
 }
