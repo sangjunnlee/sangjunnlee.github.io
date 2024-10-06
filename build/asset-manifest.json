@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7814d900.css",
+    "main.js": "/static/js/main.c2d06d20.js",
+    "static/media/SangJunLee_Resume.pdf": "/static/media/SangJunLee_Resume.388b967c67113af2be2d.pdf",
+    "index.html": "/index.html",
+    "main.7814d900.css.map": "/static/css/main.7814d900.css.map",
+    "main.c2d06d20.js.map": "/static/js/main.c2d06d20.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7814d900.css",
+    "static/js/main.c2d06d20.js"
+  ]
+}
