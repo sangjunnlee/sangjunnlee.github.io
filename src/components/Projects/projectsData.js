@@ -2,10 +2,10 @@ const projects = [
     // projects can be added an removed
     // if there are no projects, Projects section won't show up
     {
-      name: 'Gitlab',
+      name: 'Optimizing Convolutions',
       description:'Small version control system',
       imgSrc: '/assets/projects/git.jpeg',
-      stack: ['Java'],
+      stack: ['C, Open MPI, SIMD Instructions'],
       sourceCode: 'https://github.com',
       livePreview: 'https://github.com',
     },
