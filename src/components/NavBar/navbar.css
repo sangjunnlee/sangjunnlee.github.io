@@ -7,13 +7,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Add some opacity for contrast */
+    background-color: rgba(0, 0, 0, 0.7); 
     color: white;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
-    padding: 0.5rem 1rem; /* Add padding for better spacing */
+    padding: 0.5rem 1rem; 
 }
 
 nav .title {
@@ -46,54 +46,50 @@ nav ul li a:not(.active):hover {
 }
 
 nav .menu {
-    display: none; /* Hidden by default */
+    display: none; 
     flex-direction: column;
     justify-content: space-between;
-    width: 30px; /* Adjust for visual size */
-    height: 20px; /* Adjust for visual size */
-    cursor: pointer; /* Change cursor to indicate it’s clickable */
+    width: 30px; 
+    height: 20px;
+    cursor: pointer;
 }
 
 nav .menu span {
-    height: 4px; /* Adjusted height for better visibility */
+    height: 4px; 
     width: 100%;
     background-color: #fff;
-    border-radius: 2px; /* Adjusted for a smoother look */
+    border-radius: 2px;
 }
 
-/* Media Queries */
 @media (max-width: 480px) {
     nav .menu {
-        display: flex; /* Show menu on small screens */
+        display: flex;
     }
 
     nav ul {
-        display: none; /* Hide the menu by default */
+        display: none;
         flex-direction: column;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.9); /* Add background for contrast */
-        position: absolute; /* Make it overlay the content */
-        top: 60px; /* Position below the navbar */
-        left: 0; /* Align to the left */
-        padding: 1rem 0; /* Add padding for spacing */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute; 
+        top: 60px;
+        left: 0; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     }
 
     nav ul.open {
-        display: flex; /* Show menu when open */
+        display: flex; 
     }
 
     nav ul li {
-        width: 100%; /* Full width on small screens */
-        text-align: center; /* Center align text */
+        width: 100%;
+        text-align: center;
     }
 
     nav ul li a {
-        margin: 0.5rem 0; /* Adjust spacing */
-        padding: 1rem; /* Increase clickable area */
+        padding: 1rem; 
     }
 }
-
 .icon {
     margin-right: 8px;
     vertical-align: -6px;
