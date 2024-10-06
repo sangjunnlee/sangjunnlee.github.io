@@ -36,10 +36,21 @@
 
 
 @media (max-width: 480px) {
-    .about-content {
+    .about-content {   
         margin-top: 15%;
     }
     .core {
         flex-direction: column;
+    }
+    .crsl {
+        flex: none;
+        margin-top: 7%;
+        height: 400px;
+        border-radius: 10px;
+    }
+    .text-about {
+        margin-top: 5%;
+        flex: none;
+        padding: 15px; 
     }
 }
