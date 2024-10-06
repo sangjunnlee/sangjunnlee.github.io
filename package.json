@@ -1,6 +1,7 @@
 {
   "name": "personalwebsite",
   "version": "1.0.0",
+  "homepage": "https://sangjunnlee.github.io",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -38,6 +39,7 @@
     "webpack": "^5.90.3"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "webpack-cli": "^5.1.4"
   },
   "browserslist": {
