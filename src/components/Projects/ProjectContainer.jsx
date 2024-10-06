@@ -6,7 +6,6 @@ function ProjectContainer({project}) {
     return (
         <div className='project'>
             <h3>{project.name}</h3>
-
             <p className='project-description'>{project.description}</p>
             <img src={project.imgSrc}/>
             {project.stack && (
