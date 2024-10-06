@@ -1,3 +1,3 @@
 # PersonalWebsite
 
-SangJun's Portfolio
+SangJun's Personal website
