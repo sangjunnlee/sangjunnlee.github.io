@@ -22,19 +22,20 @@
     border-radius: 5%;
 }
 .text-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 1;
     padding: 30px;
 }
-
-.text-box {
-    padding: 20px 20px 20px 20px;
-    background-color: #fff;
-    position: relative;
-    border-radius: 6px;
-    font-size: 12px;
-    margin-bottom: 80%;
+.text-about h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2%;
 }
-
+.text-about p {
+    font-size: 1.25rem;
+}
 
 @media (max-width: 480px) {
     .about-content {   
