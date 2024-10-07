@@ -29,14 +29,14 @@ function Home() {
                 <img src='/assets/about/portrait.jpeg' alt="SangJun's portrait" className="profile-image" data-aos='fade-up'/>
                 <div className="text-container">
                     <h1 className="home-title" data-aos='fade-down'>sangjunlee</h1> 
-                    <h3 className="description"> I am a {" "}
+                    <h3 className="description"> I am {" "}
                         <span style={{display: "inline-block"}}>
                             <Typewriter
                                 options={{
                                     autoStart: true,
                                     loop: true,
                                     delay: 50,
-                                    strings: ["software engineer", "option2", "option3"]
+                                    strings: ["a passionate software engineer", "a driven learner", "a culturally diverse being", "a sportsman", "an enthusiastic traveler"]
                                 }}
                             />
                         </span>
