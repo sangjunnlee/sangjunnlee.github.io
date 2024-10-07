@@ -6,6 +6,7 @@
     transition: transform 0.2s linear;
     background-color: #f3f3f3;
     color: black;
+    border-radius: 5%;
 }
   
 .project:hover {

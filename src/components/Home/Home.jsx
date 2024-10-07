@@ -3,7 +3,7 @@ import "./Home.css";
 import Typewriter from "typewriter-effect";
 import useAOS from "../../hooks/useAOS";
 import Contact from "../Contact/Contact";
-import { HiOutlineMail } from "react-icons/hi";
+import { HiOutlineMail } from "react-icons/hi"; 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 
@@ -29,7 +29,7 @@ function Home() {
                 <img src='/assets/about/portrait.jpeg' alt="SangJun's portrait" className="profile-image" data-aos='fade-up'/>
                 <div className="text-container">
                     <h1 className="home-title" data-aos='fade-down'>sangjunlee</h1> 
-                    <h3> I am a {" "}
+                    <h3 className="description"> I am a {" "}
                         <span style={{display: "inline-block"}}>
                             <Typewriter
                                 options={{
@@ -43,18 +43,18 @@ function Home() {
                     </h3>
                     <div className="icon-container">
                         <a href="https://www.linkedin.com/in/sangjunnlee/">
-                            <FaLinkedin className="icon" color="white" />
+                            <FaLinkedin className="icon-contact" color="white" />
                         </a>
                         <a href="https://github.com/sangjunnlee">
-                            <FaGithub className="icon" color="white"/>
+                            <FaGithub className="icon-contact" color="white"/>
                         </a>
                         <a href="mailto:sjlee9920@gmail.com">
-                            <HiOutlineMail className="icon" color="white"/>
+                            <HiOutlineMail className="icon-contact" color="white"/>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>     
     )
 }
 

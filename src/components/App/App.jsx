@@ -8,6 +8,8 @@ import NavBar from '../NavBar/NavBar';
 import NotFound from '../NotFound';
 import './App.css'
 
+
+
 function App() {
     useEffect(() => {
         const scrollToTop = () => {

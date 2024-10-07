@@ -19,6 +19,7 @@
 .crsl {
     flex: 1;
     overflow: hidden;
+    border-radius: 5%;
 }
 .text-about {
     flex: 1;
