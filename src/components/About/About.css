@@ -16,16 +16,23 @@
     position: relative;
     height: 80vh;
 }
-.crsl {
+.crsl-container {
     flex: 1;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.crsl img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-radius: 5%;
 }
 .text-about {
+    flex: 1.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
     padding: 30px;
 }
 .text-about h1 {

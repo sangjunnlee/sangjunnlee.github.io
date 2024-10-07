@@ -13,11 +13,13 @@ function About() {
         <div className="about-container">
             <div className="about-content">
                 <div className="core">
-                    <Carousel className="crsl" autoPlay infiniteLoop showIndicators={false} showArrows={false} showStatus={false} showThumbs={false} centerMode={true} centerSlidePercentage={100}> 
-                        {imagePaths.map((imagePath, index) => (
-                            <img key={index} src={imagePath} alt={'Image ${index}'}/>
-                        ))}
-                    </Carousel>
+                    <div className="crsl-container">
+                        <Carousel className="crsl" autoPlay infiniteLoop showIndicators={false} showArrows={false} showStatus={false} showThumbs={false} centerMode={true} centerSlidePercentage={100}> 
+                            {imagePaths.map((imagePath, index) => (
+                                <img key={index} src={imagePath} alt={'Image ${index}'}/>
+                            ))}
+                        </Carousel>
+                    </div>
                     <div className="text-about">
                         <h1>
                             <u><i>Who am I?</i></u>
