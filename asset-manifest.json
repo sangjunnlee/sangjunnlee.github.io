@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a748671.css",
-    "main.js": "/static/js/main.d23c1c9c.js",
+    "main.css": "/static/css/main.e233f93b.css",
+    "main.js": "/static/js/main.d2ddbbe3.js",
     "static/media/SangJunLee_Resume.pdf": "/static/media/SangJunLee_Resume.388b967c67113af2be2d.pdf",
     "index.html": "/index.html",
-    "main.2a748671.css.map": "/static/css/main.2a748671.css.map",
-    "main.d23c1c9c.js.map": "/static/js/main.d23c1c9c.js.map"
+    "main.e233f93b.css.map": "/static/css/main.e233f93b.css.map",
+    "main.d2ddbbe3.js.map": "/static/js/main.d2ddbbe3.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a748671.css",
-    "static/js/main.d23c1c9c.js"
+    "static/css/main.e233f93b.css",
+    "static/js/main.d2ddbbe3.js"
   ]
 }
