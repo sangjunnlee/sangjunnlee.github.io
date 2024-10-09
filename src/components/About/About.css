@@ -16,7 +16,6 @@
     justify-content: center;
     overflow: hidden;
     border-radius: 5%;
-    background-color: blue;
 }
 
 .crsl img {
@@ -35,4 +34,31 @@
 
 .text-about p {
     font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+    .about-container { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 14%;
+        height: auto;
+    }
+    
+    .crsl-container {
+        flex: 1;
+    }
+    
+    .text-about {
+        padding: 30px;
+        text-align: center;
+        margin-top: 5%;;
+    }
+    
+    .text-about p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
 }

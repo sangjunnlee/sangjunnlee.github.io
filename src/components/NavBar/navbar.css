@@ -69,11 +69,11 @@ nav .menu span {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: #1e6f94;
         position: absolute; 
         top: 60px;
         left: 0; 
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2px 10px #71bbec;
     }
 
     nav ul.open {

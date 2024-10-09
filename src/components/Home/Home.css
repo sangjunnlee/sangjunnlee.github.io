@@ -59,6 +59,10 @@
     }
     .home-title {
         margin-bottom: 7%;
+        font-size: 3rem;
+    }
+    .description {
+        font-size: 1rem;
     }
     .icon-container a {
         margin-left: 10px;
