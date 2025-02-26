@@ -81,7 +81,7 @@ function Home() {
                         </span>
                     </h3>
                     <div className="cta-buttons">
-                        <a href="#about" className="cta-button primary">Know More About Me</a>
+                        <a href="#about" className="cta-button primary">About Me</a>
                         <a href="mailto:sjlee9920@gmail.com" className="cta-button secondary">Contact Me</a>
                     </div>
                 </div>
