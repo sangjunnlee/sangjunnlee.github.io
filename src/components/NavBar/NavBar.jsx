@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 import './navbar.css';
 import { IoMdPerson } from "react-icons/io";
 import { IoCodeSlashOutline, IoDocumentOutline } from "react-icons/io5";
@@ -9,13 +8,17 @@ import resume from './SangJunLee_Resume.pdf';
 function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const handleMenuClick = () => {
+    const handleMenuClick = (id) => {
         setMenuOpen(false);
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
     }
     
     return (
         <nav>
-            <Link className="title" to="/"> SJL</Link>
+            <div className="title" onClick={() => handleMenuClick('home')}> SJL</div>
             <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
                 <span></span>
                 <span></span>
@@ -23,19 +26,28 @@ function NavBar() {
             </div>
             <ul className={menuOpen ? "open" : ""}>
                 <li>
-                    <NavLink className='tab' to="/about" onClick={handleMenuClick}>
+                    <a onClick={() => handleMenuClick('about')}>
                         <IoMdPerson className="icon" />
                         About Me
-                    </NavLink>
+                    </a>
                 </li>
                 <li>
-                    <NavLink to="/experience" onClick={handleMenuClick}><MdComputer className="icon" /> Experience</NavLink>
+                    <a onClick={() => handleMenuClick('experience')}>
+                        <MdComputer className="icon" /> 
+                        Experience
+                    </a>
                 </li>
                 <li>
-                    <NavLink to="/projects" onClick={handleMenuClick}><IoCodeSlashOutline className="icon" /> Projects</NavLink>
+                    <a onClick={() => handleMenuClick('projects')}>
+                        <IoCodeSlashOutline className="icon" /> 
+                        Projects
+                    </a>
                 </li>
                 <li>
-                    <a href={resume} target="_blank" rel="noopener noreferrer"><IoDocumentOutline className="icon" />Resume</a>
+                    <a href={resume} target="_blank" rel="noopener noreferrer">
+                        <IoDocumentOutline className="icon" />
+                        Resume
+                    </a>
                 </li>
             </ul>
         </nav>
