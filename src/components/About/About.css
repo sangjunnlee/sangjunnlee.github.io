@@ -10,6 +10,7 @@
     animation: gradient 15s ease infinite;
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    gap: 2rem;
 }
 
 @keyframes gradient {
@@ -152,31 +153,62 @@
     background-size: 100% 88%;
 }
 
-@media (max-width: 480px) {
-    .about-container { 
+/* Add tablet breakpoint */
+@media (max-width: 1024px) {
+    .about-container {
         flex-direction: column;
-        padding-top: 100px;
+        padding: 100px 5% 5% 5%;
         height: auto;
+        gap: 3rem;
     }
-    
+
     .crsl-container {
-        width: 100%;
-        height: 400px;
-        margin-bottom: 20px;
+        flex: none;
+        width: 90%;
+        height: 450px;
     }
 
     .slide-item {
-        height: 400px;
+        height: 450px;
+    }
+
+    .text-about {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .text-about h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-about p {
+        font-size: 1rem;
+    }
+}
+
+/* Adjust mobile breakpoint */
+@media (max-width: 480px) {
+    .about-container { 
+        padding-top: 80px;
+        gap: 2rem;
+    }
+    
+    .crsl-container {
+        width: 95%;
+        height: 350px;
+    }
+
+    .slide-item {
+        height: 350px;
     }
     
     .text-about {
+        width: 95%;
         padding: 20px;
-        text-align: center;
-        margin-top: 5%;
     }
     
     .text-about h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-bottom: 15px;
     }
     
@@ -184,5 +216,42 @@
         font-size: 0.95rem;
         line-height: 1.5;
         text-align: left;
+    }
+
+    /* Adjust arrow positioning for mobile */
+    .slick-prev {
+        left: 10px;
+    }
+
+    .slick-next {
+        right: 10px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 24px;
+    }
+}
+
+/* Add very small screen adjustments */
+@media (max-width: 350px) {
+    .crsl-container {
+        height: 300px;
+    }
+
+    .slide-item {
+        height: 300px;
+    }
+
+    .text-about {
+        padding: 15px;
+    }
+
+    .text-about h1 {
+        font-size: 1.4rem;
+    }
+
+    .text-about p {
+        font-size: 0.9rem;
     }
 }
