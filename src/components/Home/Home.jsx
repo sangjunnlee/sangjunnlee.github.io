@@ -2,23 +2,16 @@ import React, {useEffect, useState} from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
 import useAOS from "../../hooks/useAOS";
-import Contact from "../Contact/Contact";
 import { HiOutlineMail } from "react-icons/hi"; 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
+import ParticlesBackground from "../ParticlesBackground/ParticlesBackground";
 
 function Home() {
-    const useScrollPosition = () => {
-        const [scrollPosition, setScrollPosition] = useState(0);
-    
-        useEffect(() => {
-            const handleScroll = () => setScrollPosition(window.pageYOffset);
-            window.addEventListener("scroll", handleScroll);
-            return () => window.removeEventListener("scroll", handleScroll);
-        }, []);
-    
-        return scrollPosition;
-    };
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        setIsVisible(true);
+    }, []);
 
     const TYPEWRITER_OPTIONS = {
         autoStart: true,
@@ -51,38 +44,45 @@ function Home() {
         }
     ];
 
-    const scrollPosition = useScrollPosition();
     useAOS();
 
     return (
         <div className="home-container">
-            <div className="home-content">
-                <img 
-                    src="/assets/about/portrait.jpeg" 
-                    alt="SangJun's portrait" 
-                    className="profile-image" 
-                    data-aos="fade-up"
-                />
-                <div className="text-container">
-                    <h1 className="home-title" data-aos="fade-down">
-                        sangjunlee
-                    </h1> 
-                    <h3 className="description">
-                        I am{" "}
-                        <span style={{ display: "inline-block" }}>
-                            <Typewriter options={TYPEWRITER_OPTIONS} />
-                        </span>
-                    </h3>
+            <ParticlesBackground />
+            <div className={`home-content ${isVisible ? 'visible' : ''}`}>
+                <div className="left-content">
+                    <img 
+                        src="/assets/about/portrait.jpeg" 
+                        alt="SangJun's portrait" 
+                        className="profile-image" 
+                        data-aos="fade-up"
+                    />
                     <div className="icon-container">
                         {SOCIAL_LINKS.map(({ href, Icon, ariaLabel }) => (
                             <a 
                                 key={href} 
                                 href={href} 
                                 aria-label={ariaLabel}
+                                className="social-icon"
                             >
-                                <Icon className="icon-contact" color="white" />
+                                <Icon />
                             </a>
                         ))}
+                    </div>
+                </div>
+                <div className="right-content">
+                    <h1 className="home-title" data-aos="fade-down">
+                        Hi, I'm SangJun Lee
+                    </h1>
+                    <h3 className="description">
+                        I am{" "}
+                        <span className="typewriter">
+                            <Typewriter options={TYPEWRITER_OPTIONS} />
+                        </span>
+                    </h3>
+                    <div className="cta-buttons">
+                        <a href="#about" className="cta-button primary">View My Work</a>
+                        <a href="mailto:sjlee9920@gmail.com" className="cta-button secondary">Contact Me</a>
                     </div>
                 </div>
             </div>
