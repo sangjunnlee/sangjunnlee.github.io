@@ -4,14 +4,15 @@ import useAOS from "../../hooks/useAOS";
 import { timelineData } from "./timelineData";
 import 'react-vertical-timeline-component/style.min.css';
 import "./Experience.css";
+import '../../styles/common.css';
 
 function Experience() {
 
     useAOS();
 
     return (
-        <div className="experience-container">
-            <h1 data-aos='slide-down'>My Experience</h1>
+        <div className="experience-container page-container">
+            <h1 className="page-title" data-aos='slide-down'>My Experience</h1>
             <VerticalTimeline>
                 {timelineData.map((item) => {
                     return (
@@ -20,12 +21,12 @@ function Experience() {
                             contentStyle={{ background: '#fff', color: '#000' }}
                             contentArrowStyle={{ borderRight: '7px solid  #fff' }}
                             dateClassName="date-timeline"
-                            date= {item.date}
+                            date={item.date}
                             iconStyle={{ background: '#E7F2F7FF', color: '#fff' }}
                             icon={<img src={item.imgSrc} alt={item.imgAlt} className="icon-image" />}
                         >
-                            <h2 className="vertical-timeline-element-title">{item.company}</h2>
-                            <h3 className="vertical-timeline-element-title">{item.position}</h3>
+                            <h2 className="vertical-timeline-element-company">{item.company}</h2>
+                            <h3 className="vertical-timeline-element-position">{item.position}</h3>
                             <h4 className="vertical-timeline-element-subtitle">{item.location}</h4>
                             <p>{item.description}</p>
                         </VerticalTimelineElement>  

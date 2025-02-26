@@ -1,4 +1,4 @@
-.projects-container {
+.page-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +21,7 @@
     }
 }
 
-.projects-container h1 {
+.page-title {
     margin-bottom: 5%;
     font-size: 2.5rem;
     background: linear-gradient(45deg, #ffffff, #90caf9);
@@ -31,7 +31,7 @@
     padding-bottom: 10px;
 }
 
-.projects-container h1::after {
+.page-title::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -42,25 +42,12 @@
     background: linear-gradient(90deg, #90caf9, #ffffff);
 }
 
-.grid-container {
-    max-width: 1300px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3em;
-    padding: 0 20px;
-}
-
-@media (max-width: 900px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2.5em;
-    }
-}
-
 @media (max-width: 480px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-gap: 2em;
+    .page-container {
+        padding-top: 100px;
     }
-}
+    
+    .page-title {
+        font-size: 2rem;
+    }
+} 

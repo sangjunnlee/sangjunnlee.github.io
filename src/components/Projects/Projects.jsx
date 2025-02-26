@@ -4,17 +4,18 @@ import ProjectContainer from "./ProjectContainer";
 import uniqid from 'uniqid'
 import useAOS from "../../hooks/useAOS.js";
 import './projects.css';
+import '../../styles/common.css';
 
 function Projects() {
     useAOS();
     return (
-        <div className="projects-container">
-            <h1 data-aos='slide-down'>My Projects</h1>
-        <div className='grid-container' data-aos="zoom-in">
-            {projects.map((project) => (
-            <ProjectContainer key={uniqid()} project={project} />
-            ))}
-        </div>
+        <div className="projects-container page-container">
+            <h1 className="page-title" data-aos='slide-down'>My Projects</h1>
+            <div className='grid-container' data-aos="zoom-in">
+                {projects.map((project) => (
+                    <ProjectContainer key={uniqid()} project={project} />
+                ))}
+            </div>
         </div>
     )
 }
