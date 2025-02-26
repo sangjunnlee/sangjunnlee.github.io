@@ -1,6 +1,7 @@
 .App {
     position: relative;
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .sections {
@@ -8,12 +9,14 @@
     height: 100%;
     position: relative;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .sections > section {
     width: 100%;
     min-height: 100vh;
     scroll-snap-align: start;
+    overflow-x: hidden;
 }
 
 a {

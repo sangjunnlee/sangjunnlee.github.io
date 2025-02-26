@@ -43,12 +43,21 @@
 }
 
 .grid-container {
-    max-width: 1300px;
+    max-width: 1500px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3em;
-    padding: 0 20px;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3em;
+    }
 }
 
 @media (max-width: 900px) {
@@ -62,5 +71,6 @@
     .grid-container {
         grid-template-columns: 1fr;
         grid-gap: 2em;
+        padding: 0 20px;
     }
 }
