@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.fcc3b72a.css",
-    "main.js": "/static/js/main.9bb19b31.js",
-    "static/media/SangJunLee_Resume.pdf": "/static/media/SangJunLee_Resume.329deaf0a5cc1986bd80.pdf",
+    "main.js": "/static/js/main.eb991a57.js",
+    "static/media/SangJunLee_Resume.pdf": "/static/media/SangJunLee_Resume.80eb723463b4068d6698.pdf",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.fcc3b72a.css.map": "/static/css/main.fcc3b72a.css.map",
-    "main.9bb19b31.js.map": "/static/js/main.9bb19b31.js.map"
+    "main.eb991a57.js.map": "/static/js/main.eb991a57.js.map"
   },
   "entrypoints": [
     "static/css/main.fcc3b72a.css",
-    "static/js/main.9bb19b31.js"
+    "static/js/main.eb991a57.js"
   ]
 }
