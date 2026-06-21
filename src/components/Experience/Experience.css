@@ -1,97 +1,110 @@
-.vertical-timeline-element--work {
-    margin: 2em 0;
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    width: min(100%, 980px);
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(144, 202, 249, 0.2);
-    box-shadow: 0 4px 16px rgba(144, 202, 249, 0.1);
-    border-radius: 15px;
-    padding: 2em;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.experience-card {
+    background: var(--shell-panel);
+    border: 1px solid var(--shell-border);
+    border-radius: 6px;
+    box-shadow: 0 6px 14px var(--shell-shadow);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 190px 1fr;
+    padding: 0.75rem 0.9rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(144, 202, 249, 0.3);
+.experience-card:hover {
+    border-color: #344152;
+    box-shadow: 0 8px 18px var(--shell-shadow);
 }
 
-.vertical-timeline-element-title {
-    color: #90caf9;
-    font-size: 1.4rem;
-    margin-bottom: 5px;
+.experience-meta {
+    align-content: start;
+    color: var(--shell-muted);
+    column-gap: 0.65rem;
+    display: grid;
+    font-size: 0.76rem;
+    grid-template-columns: 36px 1fr;
+    line-height: 1.35;
+    row-gap: 0.14rem;
 }
 
-.vertical-timeline-element-subtitle {
-    color: #1a1a1a;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    opacity: 0.9;
+.experience-logo {
+    border-radius: 6px;
+    grid-row: span 2;
+    height: 36px;
+    object-fit: contain;
+    width: 36px;
 }
 
-.vertical-timeline-element-content p {
-    color: #4a4a4a;
-    line-height: 1.6;
-    opacity: 0.8;
-}
-
-.date-timeline {
-    color: #ffffff;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.icon-image {
+.experience-logo.wide {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    height: auto;
+    max-height: 42px;
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 20px rgba(144, 202, 249, 0.3);
 }
 
-/* Style the timeline line */
-.vertical-timeline::before {
-    background: linear-gradient(to bottom, transparent, #90caf9, transparent);
-    width: 3px;
+.experience-logo.fallback {
+    align-items: center;
+    background: var(--shell-panel-soft);
+    border: 1px solid var(--shell-border);
+    color: var(--shell-text);
+    display: flex;
+    font-size: 0.78rem;
+    font-weight: 700;
+    justify-content: center;
 }
 
-/* Style the timeline dots */
-.vertical-timeline-element--work .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 4px #90caf9, inset 0 0 0 rgba(144, 202, 249, 0), 0 0 0 rgba(144, 202, 249, 0);
-    transition: transform 0.3s ease;
+.experience-meta p {
+    color: var(--shell-blue-soft);
+    font-weight: 700;
+    margin: 0;
 }
 
-.vertical-timeline-element--work:hover .vertical-timeline-element-icon {
-    transform: scale(1.1);
+.experience-meta span {
+    color: var(--shell-muted);
 }
 
-.vertical-timeline-element-company {
-    color: #90caf9;
-    font-size: 1.4rem;
-    margin-bottom: 5px;
+.experience-content h2 {
+    color: var(--shell-text);
+    font-size: 0.95rem;
+    line-height: 1.2;
+    margin: 0 0 0.18rem;
 }
 
-.vertical-timeline-element-position {
-    color: #1a1a1a;
-    font-size: 1.3rem;
-    margin-bottom: 5px;
+.experience-content h3 {
+    color: var(--shell-blue);
+    font-size: 0.84rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 0.4rem;
 }
 
-@media (max-width: 480px) {
-    .experience-container {
-        padding-top: 100px;
+.experience-content p {
+    color: var(--shell-blue-soft);
+    font-size: 0.78rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+@media (max-width: 760px) {
+    .experience-card {
+        gap: 0.55rem;
+        grid-template-columns: 1fr;
+        padding: 0.75rem;
     }
-    
-    .experience-container h1 {
-        font-size: 2rem;
+
+    .experience-meta {
+        grid-template-columns: 32px 1fr;
     }
-    
-    .vertical-timeline-element-title {
-        font-size: 1.2rem;
-    }
-    
-    .vertical-timeline-element-subtitle {
-        font-size: 1rem;
+
+    .experience-logo {
+        height: 32px;
+        width: 32px;
     }
 }

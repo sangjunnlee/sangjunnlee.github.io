@@ -10,8 +10,8 @@ function Projects() {
     useAOS();
     return (
         <div className="projects-container page-container">
-            <h1 className="page-title" data-aos='slide-down'>My Projects</h1>
-            <div className='grid-container' data-aos="zoom-in">
+            <h1 className="page-title" data-aos='slide-down'>Projects</h1>
+            <div className='grid-container' data-aos="fade-up">
                 {projects.map((project) => (
                     <ProjectContainer key={uniqid()} project={project} />
                 ))}

@@ -2,6 +2,7 @@
     position: relative;
     width: 100vw;
     overflow-x: hidden;
+    background: var(--shell-bg);
 }
 
 .sections {
@@ -20,9 +21,9 @@
 }
 
 a {
-    color: #90caf9;
+    color: var(--shell-blue);
 }
 
 a:hover {
-    color: #bbdefb;
+    color: var(--shell-blue-soft);
 }

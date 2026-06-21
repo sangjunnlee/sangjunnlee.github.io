@@ -1,76 +1,31 @@
 .projects-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 5% 5% 5%;
-    background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #232323, #1f1f1f);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.projects-container h1 {
-    margin-bottom: 5%;
-    font-size: 2.5rem;
-    background: linear-gradient(45deg, #ffffff, #90caf9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.projects-container h1::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 3px;
-    background: linear-gradient(90deg, #90caf9, #ffffff);
+    overflow: hidden;
 }
 
 .grid-container {
-    max-width: 1500px;
-    width: 100%;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3em;
-    padding: 0 40px;
+    gap: 0.75rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 0 auto;
+    max-width: 1180px;
     overflow: hidden;
+    width: 100%;
 }
 
 @media (max-width: 1200px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3em;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
 @media (max-width: 900px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2.5em;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
     .grid-container {
         grid-template-columns: 1fr;
-        grid-gap: 2em;
-        padding: 0 20px;
     }
 }

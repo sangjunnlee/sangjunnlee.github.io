@@ -1,10 +1,26 @@
 import React from "react";
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import useAOS from "../../hooks/useAOS";
 import { timelineData } from "./timelineData";
-import 'react-vertical-timeline-component/style.min.css';
 import "./Experience.css";
 import '../../styles/common.css';
+
+function ExperienceLogo({ item }) {
+    if (item.imgSrc) {
+        return (
+            <img
+                src={item.imgSrc}
+                alt={item.imgAlt}
+                className={`experience-logo${item.logoWide ? " wide" : ""}`}
+            />
+        );
+    }
+
+    return (
+        <span className="experience-logo fallback" aria-hidden="true">
+            {item.iconText || item.company?.charAt(0)}
+        </span>
+    );
+}
 
 function Experience() {
 
@@ -12,27 +28,25 @@ function Experience() {
 
     return (
         <div className="experience-container page-container">
-            <h1 className="page-title" data-aos='slide-down'>My Experience</h1>
-            <VerticalTimeline>
+            <h1 className="page-title" data-aos='slide-down'>Experience</h1>
+            <div className="experience-list" data-aos="fade-up">
                 {timelineData.map((item) => {
                     return (
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            contentStyle={{ background: '#fff', color: '#000' }}
-                            contentArrowStyle={{ borderRight: '7px solid  #fff' }}
-                            dateClassName="date-timeline"
-                            date={item.date}
-                            iconStyle={{ background: '#E7F2F7FF', color: '#fff' }}
-                            icon={<img src={item.imgSrc} alt={item.imgAlt} className="icon-image" />}
-                        >
-                            <h2 className="vertical-timeline-element-company">{item.company}</h2>
-                            <h3 className="vertical-timeline-element-position">{item.position}</h3>
-                            <h4 className="vertical-timeline-element-subtitle">{item.location}</h4>
-                            <p>{item.description}</p>
-                        </VerticalTimelineElement>  
+                        <article className="experience-card" key={`${item.company}-${item.date}`}>
+                            <div className="experience-meta">
+                                <ExperienceLogo item={item} />
+                                <p>{item.date}</p>
+                                {item.location && <span>{item.location}</span>}
+                            </div>
+                            <div className="experience-content">
+                                <h2>{item.company}</h2>
+                                <h3>{item.position}</h3>
+                                <p>{item.description}</p>
+                            </div>
+                        </article>
                     )
                 })}
-            </VerticalTimeline>
+            </div>
         </div>
     )
 }

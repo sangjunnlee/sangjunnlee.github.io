@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Home from '../Home/Home';
-import About from '../About/About';
 import Projects from '../Projects/Projects';
 import Experience from '../Experience/Experience';
+import Contact from '../Contact/Contact';
 import NavBar from '../NavBar/NavBar';
 import './App.css'
 
@@ -18,14 +18,14 @@ function App() {
                     <section id="home">
                         <Home />
                     </section>
-                    <section id="about">
-                        <About />
-                    </section>
                     <section id="experience">
                         <Experience />
                     </section>
                     <section id="projects">
                         <Projects />
+                    </section>
+                    <section id="contact">
+                        <Contact />
                     </section>
                 </div>
             </BrowserRouter>

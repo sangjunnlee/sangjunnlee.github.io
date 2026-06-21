@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import './navbar.css';
-import { IoMdPerson } from "react-icons/io";
-import { IoCodeSlashOutline, IoDocumentOutline } from "react-icons/io5";
+import { IoCodeSlashOutline, IoDocumentOutline, IoMailOutline } from "react-icons/io5";
 import { MdComputer } from "react-icons/md";
 import resume from './SangJunLee_Resume.pdf';
 
@@ -18,19 +17,16 @@ function NavBar() {
     
     return (
         <nav>
-            <div className="title" onClick={() => handleMenuClick('home')}> SJL</div>
+            <div className="title" onClick={() => handleMenuClick('home')}>
+                <span>SangJun Lee</span>
+                <strong>Portfolio</strong>
+            </div>
             <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul className={menuOpen ? "open" : ""}>
-                <li>
-                    <a onClick={() => handleMenuClick('about')}>
-                        <IoMdPerson className="icon" />
-                        About Me
-                    </a>
-                </li>
                 <li>
                     <a onClick={() => handleMenuClick('experience')}>
                         <MdComputer className="icon" /> 
@@ -41,6 +37,12 @@ function NavBar() {
                     <a onClick={() => handleMenuClick('projects')}>
                         <IoCodeSlashOutline className="icon" /> 
                         Projects
+                    </a>
+                </li>
+                <li>
+                    <a onClick={() => handleMenuClick('contact')}>
+                        <IoMailOutline className="icon" />
+                        Contact
                     </a>
                 </li>
                 <li>
